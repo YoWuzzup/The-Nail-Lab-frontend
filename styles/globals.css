@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* 
+  font-family: 'Roboto', sans-serif; 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Glory:ital@1&display=swap");
+/* 
+  font-family: 'Glory', sans-serif;
+*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Glory", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: inherit;
+}
+
+.italic {
+  font-family: "Glory", sans-serif;
+  font-weight: 400;
+}
+
+.fs13px {
+  font-size: 13px;
+}
+
+.mainPictureDiv {
+  height: 35vh;
+}
+
+/* calendar navigation buttons */
+.btn-group > *:not(.btn-link):hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.btn-group .btn:nth-child(2) {
+  order: 1 !important;
+}
+
+.btn-link {
+  outline: none;
+  background-color: none;
+  border: none;
+  order: 1;
+  font-size: 16px;
+  color: #000;
+}
+
+/* calendar */
+.availabilitiesBlock {
+  background-color: #000 !important;
+  width: 100% !important;
+  height: 500px !important;
+}
+
+.availSlot {
+  border: 1px solid #000;
+  align-self: center;
+  display: flex;
+  margin: 0 auto 0;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 190px;
+  height: 39px;
+}
+
+.availSlot:hover {
+  border-color: #9cbcc4;
+  color: #9cbcc4;
+}
+
+.close {
+  display: none;
+}
+
+.rounded-circle:hover {
+  box-shadow: inset 0 0 10px #9cbcc4;
+}
+/* calendar navigation buttons */
+
+@media (min-width: 600px) {
+  .mainPictureDiv {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 950px) {
+  .mainPictureDiv {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .availSlot {
+    width: 50px;
+  }
+}
